@@ -1,33 +1,32 @@
 #!/usr/bin/env python3
 
-class Cosmetics:
+class Cosmetic:
     pass
 
-cosmetics = Cosmetics()
+cosmetic = Cosmetic()
 
-print(cosmetics)
-print(isinstance(cosmetics, Cosmetics))
-print(isinstance(cosmetics, object))
+print(cosmetic)
+print(isinstance(cosmetic, Cosmetic))
+print(isinstance(cosmetic, object))
 
-class For_face(Cosmetics):
+class ForFace(Cosmetic):
     pass
 
-for_face = For_face()
+forface = ForFace
+print(forface)
+print(isinstance(forface, Cosmetic))
+print(isinstance(forface, ForFace))
+print(isinstance(forface, object))
 
-print(for_face)
-print(isinstance(for_face, Cosmetics))
-print(isinstance(for_face, For_face))
-print(isinstance(for_face, object))
-
-class Powder(For_face):
+class Powder(ForFace):
     pass
 
 powder = Powder()
 
 print(powder)
-print(isinstance(powder,For_face))
+print(isinstance(powder,ForFace))
 print(isinstance(powder,Powder))
 print(isinstance(powder,object))
 
-print(isinstance(powder, For_face))
-print(isinstance(for_face,Powder))
+print(isinstance(powder, ForFace))
+print(isinstance(forface,Powder))
